@@ -26,9 +26,3 @@ int main(){
 	pthread_exit(NULL);	
 	return 0;
 }
-
-static int varS = 0;
-pthread_exit((void*)(&varS));
-void* res;
-pthread_join(Ts[i], &res);
-int val = *(int *)res;
